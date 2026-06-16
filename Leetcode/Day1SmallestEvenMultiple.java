@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution {
     public int smallestEvenMultiple(int n) {
        if(n%2!=0) {
@@ -10,5 +11,11 @@ class Solution {
         }
         }
        return n*2;
+    }
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int n = 5;
+        int result = s.smallestEvenMultiple(n);
+        System.out.println(result); // Output: 10
     }
 }
